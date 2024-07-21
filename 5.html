@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="v.css">
+    <title>Image Slider</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="KAUST Logo">
+        </a>
+        <nav id="navbar"></nav>
+    </header>
+    <main>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide" style="background-image: url('img/b51.jpg');"></div>
+                <div class="slide" style="background-image: url('img/b52.jpg');"></div>
+                <div class="slide" style="background-image: url('img/b53.jpg');"></div>
+                <div class="slide" style="background-image: url('img/b54.jpg');"></div>
+                <div class="slide" style="background-image: url('img/b55.jpg');"></div>
+                <div class="slide" style="background-image: url('img/b56.jpg');"></div>
+                <div class="slide" style="background-image: url('img/b57.jpg');"></div>
+                   
+            </div>
+            <div class="slider-nav">
+                <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+                <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+            </div>
+            <div class="dots-container">
+                <!-- Dots will be dynamically inserted here -->
+            </div>
+            <p>Coral reefs are underwater ecosystems characterized by reef-building corals. Reefs are formed of colonies of coral polyps held together by calcium carbonate. Understanding them is significant from the perspective of carbonate sedimentology as well as climate studies. Corals are one of the major carbonate factories and are sensitive to climate change. The purpose of the short course was to understand the past present and future aspects of Coral reefs and gain hand-on training in Lakshadweep.</p>
+        </div>
+    </main>
+    
+    <footer id="footer"></footer>
+    <script src="Loadcomponents.js"></script>
+    <script src="slider.js"></script>
+</body>

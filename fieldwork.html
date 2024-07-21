@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="v.css">
+    <title>Home</title>
+    <style>
+        /* General reset */
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+        }
+
+        header {
+            width: 100%;
+            /* background: #0073e6; */
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+
+        header .logo img {
+            width: 150px;
+        }
+
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        main {
+            padding: 60px 2rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .blogs {
+            padding: 2rem;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            border-radius: 10px;
+        }
+
+        .blogs h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            color: #0b0e10;
+        }
+
+        .blogs-container {
+            display: flex;
+            flex-direction: column;
+            /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem; */
+        }
+
+        .blogs-item {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            color: black;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blogs-item img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .blogs-item:hover {
+            transform: scale(1.05);
+            background-color: #cfe2f3;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .blogs-item h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+            color: #0073e6;
+        }
+
+        .blogs-item h5 {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .blogs-item p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        footer {
+            width: 100%;
+            padding: 1rem 2rem;
+            background: #0073e6;
+            color: #fff;
+            text-align: center;
+        }
+
+        .social-icons {
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #cfe2f3;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="#" class="logo">
+        <img src="img/logo.png" alt="Logo">
+    </a>
+    <nav id="navbar"> </nav>
+</header>
+<main>
+    <section class="blogs">
+        <h2>Field Work</h2>
+        <section class="blogs-container">
+            <a href="f1.html" class="blogs-item">
+                <img src="img/blog1.png" alt="News 1">
+                <h3>Expedition 389 Hawaiian Drowned Reefs</h3>
+                <h5>August 25, 2023</h5>
+                <p>The International Ocean Discovery Program (IODP) continues its remarkable journey to explore Earth's history through marine sediments and rocks. Expedition 389 is dedicated to the study of the Hawaiian drowned reefs. These submerged coral formations hold invaluable insights into sea level fluctuations and climatic variations spanning the past half a million years.</p>
+            </a>
+            <a href="f2.html" class="blogs-item">
+                <img src="img/blog2.jpg" alt="News 2">
+                <h3>Exploring the Enchanting Landscapes: A Research Trip in Ladakh</h3>
+                <h5>June, 2023 | Ladakh, India</h5>
+            </a>
+            <a href="f3.html" class="blogs-item">
+                <img src="img/blog3.jpg" alt="News 3">
+                <h3>Unearthing a Geological Solution: Exploring Deccan Basalt in SW Maharashtra for Carbon Capture</h3>
+                <h5>May 2023 | Koyna, Maharashtra, India</h5>
+                <p>Embarking on a field trip in the picturesque region of Koyna, Maharashtra, our expedition was not just a journey of discovery but an exploration of a potential game-changer in the fight against climate change. The focus? Deccan basalt - a geological wonder that could hold the key to effective carbon sequestration. Carbon sequestration is a natural or artificial process that captures and stores carbon dioxide (CO2) from the atmosphere, helping to combat the rise of greenhouse gases and global warming. This field report delves into our findings and insights from this captivating journey.</p>
+            </a>
+            <a href="f4.html" class="blogs-item">
+                <img src="img/blog4.jpg" alt="News 4">
+                <h3>South Andaman Research Field Trip</h3>
+                <h5>April, 2023 | South Andaman, India</h5>
+                <p>The composition of the Andaman Islands includes ultramafic mafic ophiolite rocks, flysch sediments, conglomeratic rocks, and younger sedimentary rocks like shale and limestones. Additionally, the periphery of the islands contains late Quaternary and Holocene rocks, as well as modern sediments, which are continuously produced and deposited along the coast and shallow shelf. Among these geological formations, carbonate rocks and sediments are a significant component. Our focus lies in studying these modern carbonate rocks and sediments, aiming to gain a deeper understanding of the evolution of the late Quaternary carbonate system along the islands.</p>
+            </a>
+            <a href="f5.html" class="blogs-item">
+                <img src="img/blog5.jpg" alt="News 5">
+                <h3>Coral Reef: Past-Present-Future</h3>
+                <h5>March, 2023 | Lakshadweep, India</h5>
+                <p>Coral reefs are underwater ecosystems characterized by reef-building corals. Reefs are formed of colonies of coral polyps held together by calcium carbonate. Understanding them is significant from the perspective of carbonate sedimentology as well as climate studies. Corals are one of the major carbonate factories and are sensitive to climate change. The purpose of the short course was to understand the past present and future aspects of Coral reefs and gain hand-on training in Lakshadweep.</p>
+            </a>
+            <a href="f6.html" class="blogs-item">
+                <img src="img/blog6.jpg" alt="News 6">
+                <h3>Rameshwaram Field Work</h3>
+                <h5>Dec, 2022 | Rameshwaram, India</h5>
+            </a>
+            <a href="f7.html" class="blogs-item">
+                <img src="img/blog7.jpg" alt="News 7">
+                <h3>A Research Trip in Ladakh</h3>
+                <h5>July, 2022 | Ladakh, India</h5>
+            </a>
+            <a href="f8.html" class="blogs-item">
+                <img src="img/blog8.jpg" alt="News 8">
+                <h3>Field work Abu Dhabi</h3>
+                <h5>2022 | Abu Dhabi (United Arab Emirates)</h5>
+            </a>
+            <a href="f9.html" class="blogs-item">
+                <img src="img/blog9.jpg" alt="News 9">
+                <h3>Andaman Field Work</h3>
+                <h5>2022 | Andaman, India</h5>
+            </a>           
+            
+        
+            
+        </section>
+    </section>
+</main>
+<footer id="footer"></footer>
+<script src="Loadcomponents.js"></script>
+<script src="blog.js"></script>
+</body>
+</html>
+
+ 

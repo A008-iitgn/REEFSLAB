@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="v.css">
+    <title>Image Slider</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="KAUST Logo">
+        </a>
+        <nav id="navbar"></nav>
+    </header>
+    <main>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide" style="background-image: url('img/b31.jpg');"></div>
+                <div class="slide" style="background-image: url('img/b32.jpg');"></div>
+                <div class="slide" style="background-image: url('img/b33.jpg');"></div>
+                <div class="slide" style="background-image: url('img/b34.jpg');"></div>
+                <div class="slide" style="background-image: url('img/b35.jpg');"></div>
+                <div class="slide" style="background-image: url('img/b36.jpg');"></div>
+                <div class="slide" style="background-image: url('img/b37.jpg');"></div>
+                <div class="slide" style="background-image: url('img/b38.jpg');"></div>
+                <div class="slide" style="background-image: url('img/b39.jpg');"></div>
+                <div class="slide" style="background-image: url('img/b311.jpg');"></div>
+                
+            </div>
+            <div class="slider-nav">
+                <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+                <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+            </div>
+            <div class="dots-container">
+                <!-- Dots will be dynamically inserted here -->
+            </div>
+            <p>The Sahyadri mountain range (also known as the Western Ghats), synonymous with awe- inspiring beauty, shelters within its heart a geological treasure: the Deccan basalt. 
+                The Deccan trap is 67.3-68.1Ma old and one of the largest volcanic provinces in the world. Our journey was driven by the curiosity to understand whether this unique volcanic rock could play a pivotal role in absorbing and storing carbon dioxide from the atmosphere, thus contributing to mitigating global warming.</p>
+        </div>
+    </main>
+    
+    <footer id="footer"></footer>
+    <script src="Loadcomponents.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>

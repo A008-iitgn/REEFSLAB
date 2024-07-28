@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="v.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Latest News</title>
+</head>
+<style>
+    .lH{
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+        /* background-attachment: fixed; */
+    }
+    .lhead{
+        /* border: 2px solid slateblue; */
+        display: inline-block;
+        text-align: center;
+    }
+    .lhead h1 {
+            font-size: 2em;
+        }
+
+        .lhead h5 {
+            color: #777;
+            text-align:right;
+        }
+
+.lm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+            width: 100%;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+.lm img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+.lm p {
+            font-size: 18px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .lhead h1 {
+                font-size: 1.5em;
+            }
+
+            .lm p {
+                font-size: 16px;
+            }
+            footer{
+                margin-bottom: 0px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .lhead h1 {
+                font-size: 1.2em;
+            }
+
+            .lm p {
+                font-size: 14px;
+            }
+        }
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="img/logo.png " alt="">
+            </a>
+        </div>
+        <nav id="navbar"></nav>   
+    </header>
+    <div class="lH">
+        <div class="lhead">
+            <h1>Subhngi kala selected in Rystad Energy</h1>
+        </div>
+    </div>
+    <a href="https://www.linkedin.com/posts/dr-shubhangi-kala_ccus-analyst-rystad-energy-activity-7221444241950924800-bJ1_?utm_source=share&utm_medium=member_desktop" target="_blank" class="lm">
+        <img src="img/Shubhangi Kala..jpg" alt="">
+        <p>Great opportunity at Rystad Energy in Bengaluru for a CCUS Analyst passionate about clean tech and energy transition.</p>
+    </a>
+    <div id="footer"></div>
+</body>
+
+<script src="Loadcomponents.js"></script>
+</html>

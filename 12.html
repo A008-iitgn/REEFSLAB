@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="v.css">
+    <title>Publications Filter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Light background color for contrast */
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            /* background-color: #343a40; Dark header */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px; /* Adjust logo size */
+        }
+
+        nav {
+            margin-left: auto; /* Push nav to the right */
+        }
+
+        .publications h1 {
+            padding: 20px;
+            font-size: 50px;
+            color: whitesmoke;
+            text-align: center; /* Center align the title */
+            background: url(img/pbbg.avif) no-repeat center center/cover;
+            margin: 0;
+        }
+
+        .main-container {
+            max-width: 1200px; /* Limit container width */
+            margin: auto; /* Center the main container */
+            padding: 20px;
+        }
+
+        .filter-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+        }
+
+        .filter-container-item {
+            flex: 1; /* Equal width */
+            margin: 10px; /* Add margin for spacing */
+            min-width: 150px; /* Minimum width for each item */
+        }
+
+        .filter-container-item p {
+            margin: 0 0 5px;
+            font-weight: bold; /* Bold text for labels */
+        }
+
+        .publication-list {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            background: #fff; /* White background for lists */
+            padding: 15px; /* Add padding for comfort */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: transform 0.2s; /* Smooth hover effect */
+        }
+
+        .publication-list:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+        }
+
+        .publication-list a {
+            text-decoration: none;
+            color: black;
+            /* color: #007bff; Bootstrap primary color */
+        }
+
+        .publication-list a:hover {
+            text-decoration: underline;
+            /* Darker blue on hover */
+        }
+
+        @media (max-width: 768px) {
+            .filter-container {
+                flex-direction: column; /* Stack filters on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </a>
+        <nav id="navbar">
+            <!-- Navigation links can be added here -->
+        </nav>
+    </header>
+<section class="publications">
+    <h1>Publications</h1>
+    <div class="main-container">
+        <div class="filter-container">
+            <div class="filter-container-item">
+                <p>Select Type</p>
+                <select id="type-filter" class="publication-filter">
+                    <option value="All">All</option>
+                    <option value="Journal Articles (Published)">Journal Articles (Published)</option>
+                    <option value="Other Publications">Other Publications</option>
+                    <option value="Invited Talks">Invited Talks</option>
+                    <option value="Conference Publications">Conference Publications</option>
+                </select>
+            </div>
+            <div class="filter-container-item">
+                <p>Year</p>
+                <select id="year-filter" class="publication-filter">
+                    <option value="All">All</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                </select>
+            </div>
+            <div class="filter-container-item">
+                <p>Author</p>
+                <select id="author-filter" class="publication-filter">
+                    <option value="All">All</option>
+                    <option value="Khanna, P.">Khanna, P.</option>
+                    <option value="Lehrmann, D.">Lehrmann, D.</option>
+                    <option value="Harris, P.M.">Harris, P.M.</option>
+                    <!-- Add other authors as needed -->
+                </select>
+            </div>
+        </div>
+    
+        <div class="section">
+            <ol class="list-items">
+                
+                <li class="publication-list aos-init aos-animate" data-aos="fade-up"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0264817220303731" target="_blank" rel="noreferrer">Khanna, P., Pyrcz, M., Droxler, A., Hopson, H., Harris, P. M (Mitch), and Lehrmann, D.J. (2020) Implications for controls on Upper Cambrian microbial build-ups across multiple-scales, Mason County, Central Texas, USA. Marine and Petroleum Geology. Volume 121, 104590</a></li>
+                <li class="publication-list aos-init aos-animate" data-aos="fade-up"><a href="https://onlinelibrary.wiley.com/doi/10.1002/dep2.108" target="_blank" rel="noreferrer">Lehrmann, D., Droxler, A., Harris, P.M., Minzoni, M., Droxler, D., Hopson, H., Kelleher,C., Khanna, P., Lehrmann, A., Lhemann, A., Mabry, G., Mercado, L., Proctor, J., Singh, P., and Yazbek, L. (2020) Controls on Microbial and Oolitic Carbonate Sedimentation and Stratigraphic Cyclicity within a Mixed Carbonate Siliciclastic System: Upper Cambrian Wilberns Formation, Llano Area of Central Texas, U.S.A. The Depositional Record. doi.org/10.1002/dep2.108</a></li>
+                <li class="publication-list" data-aos="fade-up"><a href="https://onlinelibrary.wiley.com/doi/10.1111/sed.12679" target="_blank" rel="noreferrer">Khanna, P., Hopson, H., Droxler, A., Droxler, D., Lehrmann, D., Kubik, B., Proctor, J., Singh, P., and Harris, P.M. (2019) Late Cambrian microbial build-ups, Llano Area, Central Texas : A three- phase morphological evolution. Sedimentology. doi.org/10.1111/sed.12679</a></li>
+                <li class="publication-list" data-aos="fade-up"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0169555X1830223X" target="_blank" rel="noreferrer">Rovere, A., Khanna, P., Bianchi, C, N., Droxler, A, W., Morri, C., Naar, D.F. (2018) Submerged reef terraces in the Maldivian Archipelago (Indian Ocean) Geomorphology 317, p 218-232.</a></li>
+                <li class="publication-list aos-init" data-aos="fade-up"><a href="https://www.nature.com/articles/s41467-017-00966-x" target="_blank" rel="noreferrer">Khanna, P., Droxler, A.W., Nittrouer, J., Tunnell, W., and Shirley, T. (2017) Coralgal reef morphologies records punctuated sea level rise during last deglaciation. Nature Communications. |DOI: 10.1038/s41467-017-00966-x</a></li>
+                <li class="publication-list" data-type="Journal Articles (Published)" data-year="2020" data-author="Lehrmann, D.">
+                    Lehrmann, D., Droxler, A., Harris, P.M., Minzoni, M., Droxler, D., Hopson, H., Kelleher, C., Khanna, P., Lehrmann, A., Mabry, G., Mercado, L., Proctor, J., Singh, P., and Yazbek, L. (2020) Controls on Microbial and Oolitic Carbonate Sedimentation and Stratigraphic Cyclicity within a Mixed Carbonate Siliciclastic System: Upper Cambrian Wilberns Formation, Llano Area of Central Texas, U.S.A. The Depositional Record. doi.org/10.1002/dep2.108
+                </li>
+                <li class="publication-list" data-type="Conference Publications" data-year="2019" data-author="Khanna, P.">
+                    Khanna, P., Hopson, H., Droxler, A., Droxler, D., Lehrmann, D., Kubik, B., Proctor, J., Singh, P., and Harris, P.M. (2019) Late Cambrian microbial build-ups, Llano Area, Central Texas: A three-phase morphological evolution. Sedimentology. doi.org/10.1111/sed.12679
+                </li>
+                <!-- Add more publications as needed -->
+            </ol>
+        </div>
+    </div>
+</section>
+
+
+<script src="12.js"></script>
+<script src="Loadcomponents.js"></script>
+
+</body>
+</html>

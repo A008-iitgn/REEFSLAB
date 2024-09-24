@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="v.css">
+    <title>Home</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            
+            background-color: #f4f4f4;
+            
+        }
+        .cont{
+            /* border: 2px solid red; */
+            background-color: rgb(227, 240, 236);
+        }
+        .fieldwork h1{
+            padding-left: 240px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 50px;
+            color:whitesmoke;
+            /* border: 2px solid grey; */
+            justify-content: center;
+            background: url(img/fwbg2.avif) no-repeat center center/cover;
+        }
+         .blogs h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            color: #0b0e10;
+        }
+        .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px auto;
+    max-width: 1200px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    opacity: 0;
+    transform: translateY(50px); /* Start slightly below */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.container.visible {
+    opacity: 1;
+    transform: translateY(0); /* Move to the original position */
+}
+
+    
+        .column {
+            flex: 1 1 300px;
+            /* max-width: 300px; */
+            margin: 20px;
+            /* background-color: #f9f9f9; */
+            overflow: hidden;
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+            max-width: 600px;
+            /* height: auto; */
+
+            
+        }
+    
+        .image-container {
+            position: relative;
+            cursor: pointer;
+            height: 300px;
+            width: 300px;
+        }
+    
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            padding: auto;
+            transition: transform 0.3s;
+        }
+    
+        .image-container:hover img {
+            transform: scale(1.05);
+        }
+    
+        .text-container {
+            
+            padding: 20px;
+            border-radius: 8px;
+            
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+    
+        .text-container:hover {
+            background-color: #f0f0f0;
+        }
+    
+        .text-container h2,
+        .text-container h6 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+    
+        .text-container p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+    
+        .link {
+            text-decoration: none;
+            color: #0073e6;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+    
+        .link:hover {
+            color: #005bb5;
+        }
+    
+    </style>
+    
+    <body>
+    <header>
+    <a href="#" class="logo">
+        <img src="img/logo.png" alt="Logo">
+    </a>
+    <nav id="navbar">
+        <!-- Navigation links can be added here -->
+    </nav>
+</header>
+<main>
+    <section class="fieldwork">
+        <h1>Field Work</h1>
+        <div class="cont">
+            <div class="container">
+                <div class="column">
+                    <div class="image-container" id="earthnet-image">
+                        <img src="img/blog1.png" alt="EarthNET AI Software" title="EarthNET AI Software">
+                    </div>
+                </div>
+        
+                <div class="column">
+                    <div class="text-container" id="earthnet-text">
+                        <h2>Expedition 389 Hawaiian Drowned Reefs</h2>
+                        <p>The International Ocean Discovery Program (IODP) continues its remarkable journey to explore Earth's history through marine sediments and rocks. Expedition 389 is dedicated to the study of the Hawaiian drowned reefs.
+                            These submerged coral formations hold invaluable insights into sea level fluctuations and climatic variations spanning the past half a million years.</p>
+                            <a href="f1.html" class="learn-more-link">Learn more →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- Text Container -->
+                <div class="column">
+                    <div class="text-container" id="consulting-text">
+                        <h2>Exploring the Enchanting Landscapes: A Research Trip in Ladakh</h2>
+                        <p>Ladakh, India</p>
+                        <h6><a href="f2.html" class="link" id="consulting-link">Learn more →</a></h6>
+                    </div>
+                </div>
+        
+                <!-- Image Container -->
+                <div class="column">
+                    <div class="image-container" id="consulting-image">
+                        <img src="img/blog2.jpg" alt="ESA Consulting Services"
+                            title="ESA Consulting Services">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="column">
+                    <div class="image-container" id="earthnet-image">
+                        <img src="img/blog3.jpg" alt="EarthNET AI Software" title="EarthNET AI Software">
+                    </div>
+                </div>
+        
+                <div class="column">
+                    <div class="text-container" id="earthnet-text">
+                        <h2>Unearthing a Geological Solution: Exploring Deccan Basalt in SW Maharashtra for Carbon Capture</h2>
+                        <p>Embarking on a field trip in the picturesque region of Koyna, Maharashtra, our expedition was not just a journey of discovery but an exploration of a potential game-changer in the fight against climate change. The focus? Deccan basalt - a geological wonder that could hold the key to effective carbon sequestration. Carbon sequestration is a 
+                            natural or artificial process that captures and stores carbon dioxide (CO2) from the atmosphere, helping to combat the rise of greenhouse gases and global warming. This field report delves into our findings and insights from this captivating journey.</p>
+                          <a href="f3.html" class="learn-more-link">Learn more →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- Text Container -->
+                <div class="column">
+                    <div class="text-container" id="consulting-text">
+                        <h2>South Andaman Research Field Trip</h2>
+                        <p>The composition of the Andaman Islands includes ultramafic mafic ophiolite rocks, flysch sediments, conglomeratic rocks, and younger sedimentary rocks like shale and limestones. Additionally, the periphery of the islands contains late Quaternary and Holocene rocks, as well as modern sediments, which are continuously produced and deposited along the coast and shallow shelf.
+                            Among these geological formations, carbonate rocks and sediments are a significant component. Our focus lies in studying these modern carbonate rocks and sediments, aiming to gain a deeper understanding of the evolution of the late Quaternary carbonate system along the islands.</p>
+                       <a href="f4.html" class="learn-more-link">Learn more →</a>
+                    </div>
+                </div>
+        
+                <!-- Image Container -->
+                <div class="column">
+                    <div class="image-container" id="consulting-image">
+                        <img src="img/blog4.jpg" alt="ESA Consulting Services"
+                            title="ESA Consulting Services">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="column">
+                    <div class="image-container" id="earthnet-image">
+                        <img src="img/blog5.jpg" alt="EarthNET AI Software" title="EarthNET AI Software">
+                    </div>
+                </div>
+        
+                <div class="column">
+                    <div class="text-container" id="earthnet-text">
+                        <h2>Coral Reef: Past-Present-Future</h2>
+                        <p>Coral reefs are underwater ecosystems characterized by reef-building corals. Reefs are formed of colonies of coral polyps held together by calcium carbonate. Understanding them is significant from the perspective of carbonate sedimentology as well as climate studies. Corals are 
+                            one of the major carbonate factories and are sensitive to climate change. The purpose of the short course was to understand the past present and future aspects of Coral reefs and gain hand-on training in Lakshadweep.</p>
+                        <a href="f5.html" class="learn-more-link">Learn more →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- Text Container -->
+                <div class="column">
+                    <div class="text-container" id="consulting-text">
+                        <h2>Rameshwaram Field Work</h2>
+                        <a href="f6.html" class="learn-more-link">Learn more →</a>
+                    </div>
+                </div>
+        
+                <!-- Image Container -->
+                <div class="column">
+                    <div class="image-container" id="consulting-image">
+                        <img src="img/blog6.jpg" alt="ESA Consulting Services"
+                            title="ESA Consulting Services">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="column">
+                    <div class="image-container" id="earthnet-image">
+                        <img src="img/blog7.jpg" alt="EarthNET AI Software" title="EarthNET AI Software">
+                    </div>
+                </div>
+        
+                <div class="column">
+                    <div class="text-container" id="earthnet-text">
+                        <h2>A Research Trip in Ladakh</h2>
+                        <a href="f7.html" class="learn-more-link">Learn more →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- Text Container -->
+                <div class="column">
+                    <div class="text-container" id="consulting-text">
+                        <h2>Field work Abu Dhabi</h2>
+                        <a href="f8.html" class="learn-more-link">Learn more →</a>
+                    </div>
+                </div>
+        
+                <!-- Image Container -->
+                <div class="column">
+                    <div class="image-container" id="consulting-image">
+                        <img src="img/blog8.jpg" alt="ESA Consulting Services"
+                            title="ESA Consulting Services">
+                    </div>
+                </div>        
+            </div>
+            <div class="container">
+            <div class="column">
+                <div class="image-container" id="earthnet-image">
+                    <img src="img/blog9.jpg" alt="EarthNET AI Software" title="EarthNET AI Software">
+                </div>
+            </div>
+        
+            <div class="column">
+                <div class="text-container" id="earthnet-text">
+                    <h2>Andaman Field Work</h2>
+                    <a href="f9.html" class="learn-more-link">Learn more →</a>
+                </div>
+            </div>
+        </div>    
+
+        </div>
+    </section>
+    
+</main>
+</body>
+<footer id="footer">
+    <!-- Footer content here -->
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const containerElements = document.querySelectorAll('.container');
+
+        function handleScroll() {
+            containerElements.forEach(container => {
+                const containerPosition = container.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                // Check if the container is in the viewport
+                if (containerPosition < windowHeight - 100) {
+                    container.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // To trigger animation on page load if already in view
+    });
+</script>
+
+<script src="Loadcomponents.js"></script>
+<script src="blog.js"></script>
+</body>
+</html>
+

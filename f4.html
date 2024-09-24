@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="v.css">
+    <title>Field Work</title>
+</head>
+<style>
+    .field h1{
+            padding-left: 240px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 50px;
+            color:whitesmoke;
+            /* border: 2px solid grey; */
+            justify-content: center;
+            background: url(img/fwbg2.avif) no-repeat center center/cover;
+        }
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* padding: 20px; */
+}
+
+.grid-container {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-box {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.grid-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.grid-box p {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.grid-box:hover {
+    transform: translateY(-10px);
+}
+
+/* Center the last box if there's an odd number of boxes */
+.grid-container > .grid-box:nth-child(odd):last-child {
+    grid-column: span 2;
+    justify-self: center;
+}
+.overall-text {
+            text-align: center;
+            margin: 40px auto;
+            max-width: 1000px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #444;
+        }
+
+</style>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </a>
+        <nav id="navbar">
+            <!-- Navigation links can be added here -->
+        </nav>
+    </header>
+    <section class="field">
+        <h1>South Andaman Research Field Trip</h1>
+    </section>
+    <div class="grid-container">
+        <div class="grid-box">
+            <img src="img/b41.jpg" alt="Image 2">
+            <p>Green algae Halimeda encrusting over exposed dead corals, also contributing to the formation of modern carbonate sediments.</p>
+        </div>
+        <div class="grid-box">
+            <img src="img/b42.jpg" alt="Image 3">
+            <p>Exposed insitu corals fringing along the coastline of Kalapathar beach in Swaraj Dweep Island</p>
+        </div>
+        <div class="grid-box">
+            <img src="img/b43.jpg" alt="Image 4">
+            <p>A glimpse of the aftermath: Tsunami-affected coastal area showing evident signs of current coastal erosion along Barabalu Beach, South Andaman.
+
+            </p>
+        </div>
+        <div class="grid-box">
+            <img src="img/b44.jpg" alt="Image 5">
+            <p>Exposed dead corals along the Burmanallah beach</p>
+        </div>
+        <div class="grid-box">
+            <img src="img/b45.jpg" alt="Image 5">
+            <p>Signs of Hope: New corals emerging in the shallow waters of Burmanallah coast, a glimmer of live coral</p>
+        </div>
+        <div class="grid-box">
+            <img src="img/b46.jpg" alt="Image 5">
+            <p>Beautiful Rutland Island graces the background, while I stand on the shores of Mundapahar beach in South Andaman.
+
+            </p>
+        </div>
+        <div class="grid-box">
+            <img src="img/b47.jpg" alt="Image 5">
+            <p>Lithified beach sediments present above the high tide level, extending along certain sections of Chotabalu Beach in South Andaman.</p>
+        </div>
+    </div>
+    <div class="overall-text">
+        The Andaman and Nicobar group of islands consist of 572 islands, spanning from 6°41’N to 13°45’N latitude and 92°57’E to 93°50’E longitude. The Andaman Sea lies on the eastern side of this island group, while the Bay of Bengal is located on the western side. The Andaman Islands are geologically part of an active subduction zone between the Indian and Burmese oceanic plates, forming an accretionary wedge system.
+
+The composition of the Andaman Islands includes ultramafic mafic ophiolite rocks, flysch sediments, conglomeratic rocks, and younger sedimentary rocks like shale and limestones. Additionally, the periphery of the islands contains late Quaternary and Holocene rocks, as well as modern sediments, which are continuously produced and deposited along the coast and shallow shelf. Among these geological formations, carbonate rocks and sediments are a significant component.
+
+Our focus lies in studying these modern carbonate rocks and sediments, aiming to gain a deeper understanding of the evolution of the late Quaternary carbonate system along the islands.
+
+
+    </div>
+</body>
+<footer id="footer">
+    <!-- Footer content here -->
+</footer>
+<script src="Loadcomponents.js"></script>
+</html>

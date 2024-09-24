@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="v.css">
+    <title>Field Work</title>
+</head>
+<style>
+    .field h1{
+            padding-left: 240px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 50px;
+            color:whitesmoke;
+            /* border: 2px solid grey; */
+            justify-content: center;
+            background: url(img/fwbg2.avif) no-repeat center center/cover;
+        }
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* padding: 20px; */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.grid-box {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.grid-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.grid-box p {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.grid-box:hover {
+    transform: translateY(-10px);
+}
+
+/* Center the last box if there's an odd number of boxes */
+.grid-container > .grid-box:nth-child(odd):last-child {
+    grid-column: span 2;
+    justify-self: center;
+}
+.overall-text {
+            text-align: center;
+            margin: 40px auto;
+            max-width: 1000px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #444;
+        }
+
+</style>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </a>
+        <nav id="navbar">
+            <!-- Navigation links can be added here -->
+        </nav>
+    </header>
+    <section class="field">
+        <h1>Rameshwaram Field Work</h1>
+    </section>
+    <div class="grid-container">
+        <div class="grid-box">
+            <img src="img/b61.jpg" alt="Image 2">
+            <p>On the side of the road with sand dunes alongside in Dhanushkodi,Rameshwaram. (PC: Prof. Pankaj Khanna)</p>
+        </div>
+        <div class="grid-box">
+            <img src="img/b62.jpg" alt="Image 3">
+            <p>Dead corals strewn about in the beaches of Rameshwaram. (PC: Prof. Pankaj Khanna) </p>
+        </div>
+        <div class="grid-box">
+            <img src="img/b63.jpg" alt="Image 4">
+            <p>Shradhha and Saikat with the lithified deposits. These deposits have corals embedded in them. (PC: Prof. Pankaj Khanna)
+
+            </p>
+        </div>
+        <div class="grid-box">
+            <img src="img/b64.jpg" alt="Image 5">
+            <p>The team posing in, after a day spent in field. (PC: Prof. Pankaj Khanna)
+
+            </p>
+        </div>
+    </div>
+    <div class="overall-text"></div>
+        The Rameshwaram field work offers a unique glimpse into the geological history of the region, showcasing the diverse sedimentary processes and coral formations. The insights gained from these expeditions are vital for understanding both past and present ecological and geological phenomena, offering potential solutions to future environmental challenges.
+    </div>
+    <div class="overall-text">
+
+    </div>
+</body>
+<footer id="footer">
+    <!-- Footer content here -->
+</footer>
+<script src="Loadcomponents.js"></script>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="v.css">
+    <title>Field Work</title>
+</head>
+<style>
+    .field h1{
+            padding-left: 240px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 50px;
+            color:whitesmoke;
+            /* border: 2px solid grey; */
+            justify-content: center;
+            background: url(img/fwbg2.avif) no-repeat center center/cover;
+        }
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* padding: 20px; */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.grid-box {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.grid-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.grid-box p {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.grid-box:hover {
+    transform: translateY(-10px);
+}
+
+/* Center the last box if there's an odd number of boxes */
+.grid-container > .grid-box:nth-child(odd):last-child {
+    grid-column: span 2;
+    justify-self: center;
+}
+.overall-text {
+            text-align: center;
+            margin: 40px auto;
+            max-width: 1000px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #444;
+        }
+</style>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </a>
+        <nav id="navbar">
+            <!-- Navigation links can be added here -->
+        </nav>
+    </header>
+    <section class="field">
+        <h1>Unearthing a Geological Solution: Exploring Deccan Basalt in SW Maharashtra for Carbon Capture</h1>
+    </section>
+    <div class="grid-container">
+        <div class="grid-box">
+            <img src="img/b31.jpg" alt="Image 2">
+            <p>Glimpses of onsite drilling to collect core data.</p>
+        </div>
+        <div class="grid-box">
+            <img src="img/b32.jpg" alt="Image 3">
+            <p>Massive basalt with radial columnar joints at Junglee jaygarh fort road. </p>
+        </div>
+        <div class="grid-box">
+            <img src="img/b33.jpg" alt="Image 4">
+            <p>The field team of REEFS Lab, IIT Gandhinagar
+
+            </p>
+        </div>
+        <div class="grid-box">
+            <img src="img/b35.jpg" alt="Image 5">
+            <p>Massive basalt at Nehru Garden.</p>
+        </div>
+        <div class="grid-box">
+            <img src="img/b36.jpg" alt="Image 5">
+            <p>Cores of various basalt facies from different regions were acquired (Note: the presence of amygdules).</p>
+        </div>
+        <div class="grid-box">
+            <img src="img/b37.jpg" alt="Image 5">
+            <p>Distinguished red bole bed near Patan.</p>
+        </div>
+        <div class="grid-box">
+            <img src="img/b38.jpg" alt="Image 5">
+            <p>A glimpse of Sahyadri range at Junglee Jaygarh fort road.</p>
+        </div>
+        <div class="grid-box">
+            <img src="img/b39.jpg" alt="Image 5">
+            <p>Glimpses of onsite drilling to collect core data.</p>
+        </div>
+        <div class="grid-box">
+            <img src="img/b311.jpg" alt="Image 5">
+            <p>Flying the drone to collect images of basalt flows.</p>
+        </div>
+    </div>
+    <div class="overall-text">
+        The Sahyadri mountain range (also known as the Western Ghats), synonymous with awe- inspiring beauty, shelters within its heart a geological treasure: the Deccan basalt. The Deccan trap is 67.3-68.1Ma old and one of the largest volcanic provinces in the world. Our journey was driven by the curiosity to understand whether this unique volcanic rock could play a pivotal role in absorbing and storing carbon dioxide from the atmosphere, thus contributing to mitigating global warming.
+    </div>
+</body>
+<footer id="footer">
+    <!-- Footer content here -->
+</footer>
+<script src="Loadcomponents.js"></script>
+</html>

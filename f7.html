@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="v.css">
+    <title>Field Work</title>
+</head>
+<style>
+    .field h1{
+            padding-left: 240px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 50px;
+            color:whitesmoke;
+            /* border: 2px solid grey; */
+            justify-content: center;
+            background: url(img/fwbg2.avif) no-repeat center center/cover;
+        }
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* padding: 20px; */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.grid-box {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.grid-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.grid-box p {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.grid-box:hover {
+    transform: translateY(-10px);
+}
+
+/* Center the last box if there's an odd number of boxes */
+.grid-container > .grid-box:nth-child(odd):last-child {
+    grid-column: span 2;
+    justify-self: center;
+}
+.overall-text {
+            text-align: center;
+            margin: 40px auto;
+            max-width: 1000px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #444;
+        }
+
+</style>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </a>
+        <nav id="navbar">
+            <!-- Navigation links can be added here -->
+        </nav>
+    </header>
+    <section class="field">
+        <h1>A Research Trip in Ladakh</h1>
+    </section>
+    <div class="grid-container">
+        <div class="grid-box">
+            <img src="img/b71.jpg" alt="Image 2">
+            <p>In the Front row (From left to right: Dr. Sam Thiele, Prof. Khanna, Bhavya Bajpai, Sarthak Sahu), in the back row (Left- Dr. Horthing V zimik, Right- Taxi driver)
+
+            </p>
+        </div>
+        <div class="grid-box">
+            <img src="img/b72.jpg" alt="Image 3">
+            <p>Puga Hot spring </p>
+        </div>
+        <div class="grid-box">
+            <img src="img/b73.jpeg" alt="Image 4">
+            <p>Hotsprings view, Chumathang
+
+            </p>
+        </div>
+    </div>
+    <div class="overall-text">
+        India has vast potential for geothermal energy, with medium- to high-enthalpy resources in the Himalayas and low-enthalpy reservoirs in both eastern and western India. However, despite this recognized potential and the ever-increasing energy needs of India, no geothermal pilot or direct application has been attempted. This is mostly due to subsurface uncertainties regarding temperatures, flow parameters, and reservoir size that increase investment risk. The proposed exploratory research project aims to reduce this uncertainty by developing outcropping reservoir analogues and thus helping to unlock the geothermal potential of India.
+
+High-altitude deserts, majestic mountains, and a rich cultural tapestry Ladakh, often called the Land of High Passes is a destination that beckons adventurers, researchers, and nature enthusiasts alike. Tucked away in the northernmost region of India, this remote area has captured the imagination of travelers for centuries. Embarking on a research trip to Ladakh is a journey into a world of contrasts, where ancient traditions meet breathtaking landscapes.
+
+
+    </div>
+</body>
+<footer id="footer">
+    <!-- Footer content here -->
+</footer>
+<script src="Loadcomponents.js"></script>
+</html>

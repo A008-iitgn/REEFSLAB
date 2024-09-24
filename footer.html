@@ -1,9 +1,144 @@
-<footer>
-  <p>&copy; 2024 REEFS Lab, IIT Gandhinagar. All rights reserved.</p>
-  <div class="social-icons">
-      <a href="" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/reefs_labiitgn?igsh=MWU4NWpidnR4M3pzag==" target="_blank" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-  </div>
-</footer>
-  
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="v.css">
+    <title>Home</title>
+    <style>
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-section {
+            flex: 1;
+            padding: 0 20px;
+        }
+        
+        h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        ul li {
+            margin-bottom: 10px;
+        }
+        
+        ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        ul li a:hover {
+            color: #999;
+        }
+        
+        .newsletter form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .newsletter input[type="email"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        .newsletter button {
+            padding: 10px;
+            border: none;
+            background-color: #fff;
+            color: #333;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .newsletter button:hover {
+            background-color: #999;
+            color: #fff;
+        }
+        
+        .social-icons {
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+        
+        .social-icons a:hover {
+            color: #999;
+        }
+        
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #999;
+        }
+        
+        .footer-bottom p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section useful-links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Contact </h3>
+                <form action="subscribe.php" method="POST">
+                    <input type="email" name="email" placeholder="Your Email Address" required>
+                    <button type="submit">submit</button>
+                </form>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact</h3>
+                <p>IIT Gandhinagar<br>Palaj, Gandhinagar, Gujarat, IN</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/p/C0ZkqtOIUUV/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Reefs Lab IITGN. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="Loadcomponents.js"></script>
+    <script src="blog.js"></script>
+    
+</body>
+</html>

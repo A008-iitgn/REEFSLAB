@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="v.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="testnew.css">
+
+    <title>Home</title>
+</head>
+
+<style>
+    @charset "utf-8";
+
+/*** Fonts Import Start ****/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/*** Fonts Face CSS End ****/
+
+/*** Common Element CSS Start **/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.clear {
+  clear: both;
+}
+img {
+  max-width: 100%;
+  border: 0px;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+a:focus,
+a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  color: #e73700;
+}
+h2 {
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  position: relative;
+  text-transform: capitalize;
+}
+h3 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  line-height: 36px;
+}
+button {
+  outline: none !important;
+}
+/*** Common Element CSS End ***/
+
+/* -------- title style ------- */
+.line-title {
+  position: relative;
+  width: 400px;
+}
+.line-title::before,
+.line-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+}
+.line-title::before {
+  width: 100%;
+  background: #f2f2f2;
+}
+.line-title::after {
+  width: 32px;
+  background: #e73700;
+}
+
+/*** Middle section CSS Start **/
+/* -------- Landing page ------- */
+.game-section {
+  padding: 60px 50px;
+}
+.game-section .owl-stage {
+  margin: 15px 0;
+  display: flex;
+  display: -webkit-flex;
+}
+.game-section .item {
+  margin: 0 15px 60px;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  background: #343434 no-repeat center center / cover;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.game-section .item.active {
+  width: 500px;
+  box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+}
+.game-section .item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+.game-section .item-desc {
+  padding: 0 24px 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateY(calc(100% - 54px));
+  -webkit-transform: translateY(calc(100% - 54px));
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.game-section .item.active .item-desc {
+  transform: none;
+  -webkit-transform: none;
+}
+.game-section .item-desc p {
+  opacity: 0;
+  -webkit-transform: translateY(32px);
+  transform: translateY(32px);
+  transition: all 0.4s ease-in-out 0.2s;
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+}
+.game-section .item.active .item-desc p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.game-section .owl-theme.custom-carousel .owl-dots {
+  margin-top: -20px;
+  position: relative;
+  z-index: 5;
+}
+/*** Middle section CSS End ****/
+
+/** responsive css Start ***/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  h2 {
+    margin-bottom: 32px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 50px 30px;
+  }
+  .game-section .item {
+    margin: 0 12px 60px;
+    width: 260px;
+    height: 360px;
+  }
+  .game-section .item.active {
+    width: 400px;
+  }
+  .game-section .item-desc {
+    transform: translateY(calc(100% - 46px));
+    -webkit-transform: translateY(calc(100% - 46px));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h2 {
+    margin-bottom: 32px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .line-title {
+    width: 330px;
+  }
+
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 50px 30px 40px;
+  }
+  .game-section .item {
+    margin: 0 12px 60px;
+    width: 240px;
+    height: 330px;
+  }
+  .game-section .item.active {
+    width: 360px;
+  }
+  .game-section .item-desc {
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .line-title {
+    width: 250px;
+  }
+
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 30px 15px 20px;
+  }
+  .game-section .item {
+    margin: 0 10px 40px;
+    width: 200px;
+    height: 280px;
+  }
+  .game-section .item.active {
+    width: 270px;
+    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+  }
+  .game-section .item-desc {
+    padding: 0 14px 5px;
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
+    .data-power-section {
+        background-color: transparent; /* Can add a background image or gradient if needed */
+        padding: 50px 20px;
+    }
+    
+    /* Content container */
+    .content-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+    
+    /* Section header */
+    .section-header h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    /* Section body */
+    .section-body p {
+        font-size: 1.125rem;
+        color: #555;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+    
+    /* Media Queries for responsiveness */
+    @media (max-width: 768px) {
+        .section-header h2 {
+            font-size: 1.5rem;
+        }
+    
+        .section-body p {
+            font-size: 1rem;
+        }
+    }
+
+    /* Testimonial slider styles */
+    .testimonial-slider-container {
+        width: 80%;
+        max-width: 800px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    blockquote {
+        font-size: 18px;
+        font-style: italic;
+        line-height: 1.5;
+        margin: 20px auto;
+        position: relative;
+    }
+    
+    footer {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    .swiper-pagination-bullet {
+        background: white;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background: #007bff;
+    }
+
+    .hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+}
+
+/* Content on top of the slider */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+}
+
+/* Slider container acting as the background */
+.slider-background {
+    position: absolute; /* Changed to absolute to allow scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Full height of the hero section */
+    display: flex; /* Use flex to align slider items */
+    transition: transform 0.5s ease; /* Smooth transition effect */
+    z-index: 1;
+}
+
+/* Each slider item should fill the height of the hero section */
+.slider-item {
+    flex: 0 0 100%; /* Flex to ensure each item takes full width */
+    height: 100vh; /* Full height of viewport */
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the area without distortion */
+}
+
+/* Optional scrollbar styling */
+.slider-background::-webkit-scrollbar {
+    height: 8px;
+}
+
+.slider-background::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+/* Optional navigation buttons (hidden now) */
+.prev, .next {
+    display: none; /* Hide navigation buttons */
+}
+
+
+</style>
+
+<body>
+<header>
+    <div class="logo">
+        <a href="#">
+            <img src="img/logo.png " alt="">
+        </a>
+    </div>
+    <nav id="navbar"></nav>
+    <div class="logo">
+      <a href="#">
+          <img src="img/logo2.jpeg " alt="">
+      </a>
+  </div>   
+</header>
+
+<main>
+    <div class="hero-section">
+        <div class="slider-background" id="slider">
+            <div class="slider-item">
+                <img src="img/w1.jpg" alt="Slide 1">
+            </div>
+            <div class="slider-item">
+                <img src="img/w2.jpg" alt="Slide 2">
+            </div>
+            <div class="slider-item">
+                <img src="img/w3.jpeg" alt="Slide 3">
+            </div>
+            <div class="slider-item">
+                <img src="img/w5.jpg" alt="Slide 4">
+            </div>
+        </div>
+    
+        <!-- Content inside hero section -->
+        <div class="hero-content">
+            <h1>REEFS Lab IIT Gandhinagar.</h1>
+            <p>Redefined Energy for Sustainability</p>
+        </div>
+    
+        <!-- Optional navigation buttons -->
+        <div class="prev" onclick="slideLeft()">&#10094;</div>
+        <div class="next" onclick="slideRight()">&#10095;</div>
+    </div>
+
+    <section class="data-power-section">
+        <div class="content-container">
+            <div class="section-header" data-aos="fade-in" data-aos-delay="50">
+                <h2 id="unleashing-the-power-of-your-data">Redefining Energy For Sustainability</h2>
+            </div>
+            <div class="section-body" data-aos="fade-in" data-aos-delay="50">
+                <p>Welcome to the REEFS Lab at IIT Gandhinagar, where we fuse earth sciences with sustainability. We focuses on unraveling Earth's past and shaping its future sustainably. We explore modern and fossil carbonates, reservoir architecture, sea-level fluctuations, and sequence stratigraphy, while embracing geothermal energy and carbon capture techniques. Through interdisciplinary synergy and technological advancements, we're committed to driving impactful research that addresses both geological complexities and energy sustainability challenges.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Slider Section -->
+    <section class="news">
+        <h2>Latest News</h2>
+
+        <div class="testimonial-slider-container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <blockquote>
+                            <p>"Dr. Pankaj Khanna has been selected as an Associate of Indian Academy Of Sciences"</p>
+                            
+                        </blockquote>
+                    </div>
+                    <div class="swiper-slide">
+                        <blockquote>
+                            <p>"Subhangi Kala got selected in Rystad Energy"</p>
+                            
+                        </blockquote>
+                    </div>
+                    <div class="swiper-slide">
+                        <blockquote>
+                            <p>"Expedition 389 Hawaiian Drowned Reefs"</p>
+                            
+                        </blockquote>
+                    </div>
+                    <div class="swiper-slide">
+                        <blockquote>
+                            <p>"SC333-Drone Data Acquisition, Processing, and Interpretation"</p>
+                            
+                        </blockquote>
+                    </div>
+                    <div class="swiper-slide">
+                        <blockquote>
+                            <p>"Recent Publication"</p>
+                            
+                        </blockquote>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="game-section">
+      <h2 class="line-title">News</h2>
+      <div class="owl-carousel custom-carousel owl-theme">
+        <div class="item active" style="background-image: url(img/n1.png);">
+          <div class="item-desc">
+            <h3>Hearty Congratulations</h3>
+            
+            <p>We are thrilled to share that Prof Pankaj Khanna, Assistant Professor, Earth Sciences;
+              and Prof Rusa Mandal, Assistant Professor, Physics, have been selected as Associates of the Indian Academy of Sciences in Earth Sciences and Physics, 
+              respectively</div>
+        </div>
+        <div class="item" style="background-image: url(img/n2.png);">
+          <div class="item-desc">
+            <h3></h3>
+            <p>Poornima Karki from REEFS Lab participated in the 10th IAS International Summer School in Bonaire Island, Caribbean Netherlands on  Neogene and Holocene Carbonate Platform in the Caribbean: Controls On Sedimentary Processes and Diagenesis.
+              1. The 10th IAS Summerschool team consisting of 22 students from different nationalities and the organisation team, Juan Carlos Laya, Fiona Whitaker, Carl Jacquemyn, Cameron Manche .
+              2. 10th IAS Summerschool women network.
+              Following it are some glimpses from the field.</p>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(img/n3.png);">
+          <div class="item-desc">
+            <h3>Picture Credits : SEG and Debasmita Dutta</h3>
+            <p>1. Ph.D. Scholar Debasmita presented her poster in SEG CCS symposium- Role of Geoscience in Carbon storage (19-21th March,2024).
+
+              2.Group photo with Prof Manika Prasad (Director, CSM-CCUS innovation centre) , Achyuta A. Mishra (Lead Geoscientist, Reliance Ltd), Shib S. Ganguly (Scientist CSIR- NGRI) and PhD scholars from IIT Kanpur & IIT Guwahati .
+              
+              Some glimpses of the conference and networking sessions.
+              </p>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(img/n4.png);">
+          <div class="item-desc">
+            <h3>Ecord_Iodp</h3>
+            <p>If I could describe my first impression of MARUM in one word, it would be “fantastic”. 
+              The core storage sample preparation facilities here are world-class. I have been looking forward to this onshore science party for quite some time, and it has already exceeded my expectations.“
+          </p>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(img/n5.png);">
+          <div class="item-desc">
+            <h3> Lakshadweep conference</h3>
+            <p>The Lakshadweep Knowledge Summit was held at IIT Gandhinagar from December 3 to 7, by the support of the Nature Conservation Foundation and The Habitats Trust.
+              This summit brought together researchers, and islanders offering a collaborative platform for the exploration of diverse facets of Lakshadweep. Participants engaged in comprehensive discussions spanning geology, ecology,
+               history and the socio-economic aspects of the Lakshadweep.</p>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(img/n6.png);">
+          <div class="item-desc">
+            <h3>Team Reefs_Lab </h3>
+            <p>REEFS Lab, IIT Gandhinagar</p>
+          </div>
+        </div>
+      
+        </div>
+      </div>
+      </div>
+    </section>
+</main>
+
+<footer id="footer"></footer>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  let currentIndex = 0;
+const sliderItems = document.querySelectorAll('.slider-item');
+const totalSlides = sliderItems.length;
+
+function showNextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides; // Cycle through slides
+    const offset = -currentIndex * 100; // Calculate offset based on full width
+    document.querySelector('.slider-background').style.transform = `translateX(${offset}%)`;
+}
+
+// Change slide every 3 seconds
+setInterval(showNextSlide, 3000); 
+
+
+</script>
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Initialize Swiper
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        // Initialize AOS (Animate on Scroll)
+        AOS.init({
+            duration: 800,
+            delay: 100,
+        });
+    });
+</script> -->
+<!-- <script>
+        // JavaScript to handle the sliding effect
+        function slideLeft() {
+            const slider = document.getElementById('slider');
+            slider.scrollBy({ left: -window.innerWidth, behavior: 'smooth' });
+        }
+    
+        function slideRight() {
+            const slider = document.getElementById('slider');
+            slider.scrollBy({ left: window.innerWidth, behavior: 'smooth' });
+        }
+</script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="testnew.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                nav: true,
+                dots: true,
+            });
+        });
+    </script>
+<script src="Loadcomponents.js"></script>
+<script src="v.js"></script>
+<script>
+    $(".custom-carousel").owlCarousel({
+    autoWidth: true,
+    loop: true
+  });
+  $(document).ready(function () {
+    $(".custom-carousel .item").click(function () {
+      $(".custom-carousel .item").not($(this)).removeClass("active");
+      $(this).toggleClass("active");
+    });
+  });
+</script>
+</body>
+</html>
